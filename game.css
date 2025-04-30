@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #70c5ce;
+}
+
+#homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#gameScreen {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #70c5ce;
+}
+
+#gameCanvas {
+    background-color: #70c5ce;
+    border: 1px solid black;
+}
+
+#scoreLevel {
+    font-size: 28px;
+    font-family: 'Arial', sans-serif;
+    color: red;  /* Red color for the score and level */
+    position: absolute;
+    bottom: 50px;  /* Positioned below the pillars */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;  /* Ensure score and level appear above the game */
+}
+
+#compliment {
+    font-size: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+}

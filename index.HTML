@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+
+        #gameScreen {
+            display: none;
+        }
+
+        #homepage {
+            display: block;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background-color: #e8e8e8;
+        }
+
+        #score, #level {
+            font-size: 20px;
+            color: white;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        #compliment {
+            color: white;
+            font-size: 16px;
+            position: absolute;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Game Container -->
+    <div id="homepage">
+        <h1>Flappy Bird Game</h1>
+        <button onclick="startGame()">Start Game</button>
+        <button onclick="viewHighScore()">View High Score</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="gameScreen">
+        <canvas id="gameCanvas" width="480" height="480"></canvas>
+        <div id="score">Score: 0</div>
+        <div id="level">Level: 1</div>
+        <div id="compliment"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
